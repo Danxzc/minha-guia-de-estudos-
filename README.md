@@ -24,14 +24,14 @@ Abaixo estão os principais métodos e ferramentas para integrá-los:
  pandas: Possui funções integradas como pd.read_sql() que facilitam a leitura de resultados de consultas SQL diretamente para DataFrames, o que torna o processo de análise muito mais ágil.
 
 3. Fluxo de Trabalho Típico (Exemplo com SQL Server e pyodbc)
-O processo de integração geralmente segue estes passos:
+ O processo de integração geralmente segue estes passos:
 
-Instalação do Driver: Instala-se a biblioteca necessária via terminal (ex: pip install pyodbc).
-Conexão: Cria-se uma string de conexão com o servidor e o banco de dados.
-Cursor e Execução: Utiliza-se um objeto cursor para executar comandos SQL (como SELECT).
-Recuperação de Dados: Os resultados podem ser percorridos em loops ou carregados em estruturas do Python.
-Persistência (Commit): Caso sejam feitas inserções ou atualizações, é necessário usar o método commit() para salvar as alterações.
-Encerramento: Fecha-se a conexão após o uso.
+ Instalação do Driver: Instala-se a biblioteca necessária via terminal (ex: pip install pyodbc).
+ Conexão: Cria-se uma string de conexão com o servidor e o banco de dados.
+ Cursor e Execução: Utiliza-se um objeto cursor para executar comandos SQL (como SELECT).
+ Recuperação de Dados: Os resultados podem ser percorridos em loops ou carregados em estruturas do Python.
+ Persistência (Commit): Caso sejam feitas inserções ou atualizações, é necessário usar o método commit() para salvar as alterações.
+ Encerramento: Fecha-se a conexão após o uso.
 
 4. Vantagens da Integração
     Eficiência: Evita o "problema das duas linguagens", permitindo que prototipagem e sistemas de produção usem o mesmo ecossistema (Python) para gerenciar dados relacionais complexos.
